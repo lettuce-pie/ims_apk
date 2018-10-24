@@ -120,16 +120,16 @@
     .local v1, "errorCode":I
     iget-object v3, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
-    instance-of v3, v3, Landroid/telephony/ims/ImsException;
+    instance-of v3, v3, Lcom/android/ims/ImsException;
 
     if-eqz v3, :cond_2
 
     .line 917
     iget-object v3, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
-    check-cast v3, Landroid/telephony/ims/ImsException;
+    check-cast v3, Lcom/android/ims/ImsException;
 
-    invoke-virtual {v3}, Landroid/telephony/ims/ImsException;->getCode()I
+    invoke-virtual {v3}, Lcom/android/ims/ImsException;->getCode()I
 
     move-result v1
 

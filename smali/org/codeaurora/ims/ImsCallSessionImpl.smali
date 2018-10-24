@@ -1215,11 +1215,11 @@
 
     .line 1778
     .local v0, "newMsg":Landroid/os/Message;
-    new-instance v1, Landroid/telephony/ims/ImsException;
+    new-instance v1, Lcom/android/ims/ImsException;
 
     const-string/jumbo v2, "Dial Failed"
 
-    invoke-direct {v1, v2, p1}, Landroid/telephony/ims/ImsException;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, p1}, Lcom/android/ims/ImsException;-><init>(Ljava/lang/String;I)V
 
     const/4 v2, 0x0
 
